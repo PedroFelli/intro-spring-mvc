@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:15:14:21 -0300] "GET /intro-spring-mvc/ HTTP/1.1" 200 273 http-bio-9090-exec-1 581
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:15:15:35 -0300] "GET /intro-spring-mvc/ HTTP/1.1" 200 273 http-bio-9090-exec-1 152
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:15:15:40 -0300] "GET /intro-spring-mvc/ HTTP/1.1" 200 273 http-bio-9090-exec-2 3
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:15:15:42 -0300] "GET /intro-spring-mvc/ HTTP/1.1" 200 273 http-bio-9090-exec-3 2
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:15:16:24 -0300] "GET /intro-spring-mvc/ HTTP/1.1" 200 282 http-bio-9090-exec-1 589
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:15:16:40 -0300] "GET /intro-spring-mvc/ HTTP/1.1" 200 282 http-bio-9090-exec-2 6
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:15:20:24 -0300] "GET /intro-spring-mvc/ HTTP/1.1" 200 282 http-bio-9090-exec-4 4
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:15:21:46 -0300] "GET /intro-spring-mvc/teste HTTP/1.1" 200 305 http-bio-9090-exec-6 5
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:15:22:16 -0300] "GET /intro-spring-mvc/teste HTTP/1.1" 200 305 http-bio-9090-exec-7 2
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:15:39:41 -0300] "GET /intro-spring-mvc/ HTTP/1.1" 200 282 http-bio-9090-exec-1 152
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:15:39:44 -0300] "GET /intro-spring-mvc/teste HTTP/1.1" 200 305 http-bio-9090-exec-2 3
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:15:42:14 -0300] "GET /intro-spring-mvc/teste HTTP/1.1" 200 305 http-bio-9090-exec-4 3
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:15:42:49 -0300] "GET /intro-spring-mvc/teste HTTP/1.1" 200 305 http-bio-9090-exec-5 3
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:15:43:09 -0300] "GET /intro-spring-mvc/teste HTTP/1.1" 200 305 http-bio-9090-exec-1 133
