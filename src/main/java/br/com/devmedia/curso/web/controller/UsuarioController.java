@@ -2,6 +2,7 @@ package br.com.devmedia.curso.web.controller;
 
 
 import br.com.devmedia.curso.dao.UsuarioDao;
+import br.com.devmedia.curso.domain.TipoSexo;
 import br.com.devmedia.curso.domain.Usuario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,6 +27,7 @@ public class UsuarioController {
 
     @GetMapping("/cadastro")
     public String cadastro(@ModelAttribute("usuario")Usuario usuario, ModelMap model){
+        model.addAttribute("sexo", TipoSexo.values());
         return "/user/add";
     }
 
@@ -44,9 +46,9 @@ public class UsuarioController {
     }
 
     @PostMapping("/update")
-    public ModelAndView Update(@ModelAttribute("usuario") Usuario usuario, RedirectAttributes attr){
+    public ModelAndView update(@ModelAttribute("usuario") Usuario usuario, RedirectAttributes attr) {
         dao.editar(usuario);
-        attr.addFlashAttribute("message", "Usuario alterado com sucesso.");
+        attr.addFlashAttribute("message", "Usuário alterado com sucesso.");
         return new ModelAndView("redirect:/usuario/todos");
     }
 

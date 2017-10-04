@@ -46,6 +46,7 @@ public class UsuarioDaoImpl implements UsuarioDao {
                     u.setNome(usuario.getNome());
                     u.setSobrenome(usuario.getSobrenome());
                     u.setDtNascimento(usuario.getDtNascimento());
+                    u.setSexo(usuario.getSexo());
                 });
     }
 

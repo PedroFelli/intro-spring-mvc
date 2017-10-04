@@ -1,52 +1,53 @@
 package br.com.devmedia.curso.domain;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
 import java.time.LocalDate;
 
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.DateTimeFormat.ISO;
+
 public class Usuario {
+
     private Long id;
+
     private String nome;
+
     private String sobrenome;
-    private TipoSexo sexo;
 
-
-    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+    @DateTimeFormat(iso = ISO.DATE)
     private LocalDate dtNascimento;
 
-    public Usuario(long id, String ana, String da_silva, LocalDate of, TipoSexo feminino){
+    private TipoSexo sexo;
 
+    public Usuario() {
         super();
     }
 
-
-    public Usuario(Long id, String nome, String sobrenome, TipoSexo sexo, LocalDate dtNascimento) {
+    public Usuario(Long id, String nome, String sobrenome) {
+        super();
         this.id = id;
         this.nome = nome;
         this.sobrenome = sobrenome;
-        this.sexo = sexo;
+    }
+
+    public Usuario(Long id, String nome, String sobrenome, LocalDate dtNascimento) {
+        super();
+        this.id = id;
+        this.nome = nome;
+        this.sobrenome = sobrenome;
         this.dtNascimento = dtNascimento;
     }
 
-    public TipoSexo getSexo() {
-        return sexo;
-    }
-
-    public void setSexo(TipoSexo sexo) {
+    public Usuario(Long id, String nome, String sobrenome, LocalDate dtNascimento, TipoSexo sexo) {
+        super();
+        this.id = id;
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.dtNascimento = dtNascimento;
         this.sexo = sexo;
     }
 
     public Long getId() {
-
         return id;
-    }
-
-    public LocalDate getDtNascimento() {
-        return dtNascimento;
-    }
-
-    public void setDtNascimento(LocalDate dtNascimento) {
-        this.dtNascimento = dtNascimento;
     }
 
     public void setId(Long id) {
@@ -69,12 +70,26 @@ public class Usuario {
         this.sobrenome = sobrenome;
     }
 
+    public LocalDate getDtNascimento() {
+        return dtNascimento;
+    }
+
+    public void setDtNascimento(LocalDate dtNascimento) {
+        this.dtNascimento = dtNascimento;
+    }
+
+    public TipoSexo getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(TipoSexo sexo) {
+        this.sexo = sexo;
+    }
+
     @Override
     public String toString() {
-        return "Usuario{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", sobrenome='" + sobrenome + '\'' +
-                '}';
+        return "Usuario [id=" + id + ", nome=" + nome + ", sobrenome=" + sobrenome + "]";
     }
+
+
 }
